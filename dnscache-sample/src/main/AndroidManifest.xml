@@ -1,0 +1,49 @@
+<manifest package="com.sina.util.dnscache.sample"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name="com.sina.util.dnscache.sample.DnsCacheApplication"
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+
+        <meta-data android:name="DNSCACHE_APP_KEY" android:value="a0438af0d595438c2a193f905f98484b"/>
+
+        <activity
+            android:name="com.sina.util.dnscache.sample.DNSCacheTestActivityTabMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.util.dnscache.sample.simulationtask.TaskInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sina.util.dnscache.sample.datagraph.AllTaskSpeedBIActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sina.util.dnscache.sample.datagraph.HttpDNSExpendTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sina.util.dnscache.sample.datagraph.AllTaskExpendTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sina.util.dnscache.sample.datagraph.ServerSpeedActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+</manifest>
